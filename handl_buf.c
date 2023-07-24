@@ -10,5 +10,12 @@
 
 int handlBuf(char *buf, char c, unsigned int ibuf)
 {
-	return (0);
+	if (ibuf == 1024)
+	{
+		printBuf(buf, ibuf);
+		ibuf = 0;
+	}
+	buf[ibuf] = c;
+	ibuf++;
+	return (ibuf);
 }
