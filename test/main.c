@@ -11,5 +11,6 @@ int main(void)
 {
     _printf("Let's try to printf a simple sentence.this a char:: %c ::\n", 'v');
     _printf("Let's try to printf a simple sentence.this a string:: %s ::\n", "engineer");
+    _printf("Let's try to printf a simple sentence.this a percent:: %% ::\n");
     return (0);
 }
