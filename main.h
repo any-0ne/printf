@@ -23,7 +23,6 @@ int _printf(const char *format, ...);
 int printChar(va_list arguments, char *buf, unsigned int ibuf);
 int printStr(va_list arguments, char *buf, unsigned int ibuf);
 int handlBuf(char *buf, char c, unsigned int ibuf);
-int printInt(va_list arguments, char *buf, unsigned int ibuf);
 int printBuf(char *buf, unsigned int nbuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 
