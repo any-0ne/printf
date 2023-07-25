@@ -10,5 +10,10 @@
 
 int printChar(va_list arguments, char *buf, unsigned int ibuf)
 {
+	char c;
+
+	c = va_arg(arguments, int);
+	handlBuf(buf, c, ibuf);
+
 	return (1);
 }
