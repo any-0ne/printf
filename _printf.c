@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 			if (format[i + 1] == '%')
 			{
 				len++;
-				handlBuf(buffer, format[i], ibuf);
+				handlBuf(buffer, '%', ibuf);
 			}
 			else if (format[i + 1] == '\0')
 			{
@@ -50,7 +50,6 @@ int _printf(const char *format, ...)
 				else
 				{
 					len += function(arguments, buffer, ibuf);
-					i += idCounter(format, i + 1);
 				}
 			}
 			i++;
