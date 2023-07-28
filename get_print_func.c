@@ -12,6 +12,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 	print_t pr[] = {
 		{"c", printChar}, {"s", printStr},
 		{"i", printInt}, {"d", printInt},
+		{"b", printBin}, {"u", printUInt},
 		{NULL, NULL}
 	};
 	int i = 0, j = 0, first_index;
