@@ -27,5 +27,6 @@ int printBuf(char *buf, unsigned int nbuf);
 int printInt(va_list arguments, char *buf, unsigned int ibuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 int printUInt(va_list arguments, char *buf, unsigned int ibuf);
+int printRev(va_list arguments, char *buf, unsigned int ibuf);
 
 #endif
